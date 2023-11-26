@@ -5,8 +5,9 @@ const Header = () => {
   return (
     <div className='w-full m-auto bg-transparent'>
         <div className='flex justify-between md:justify-center items-center px-16'>
-            <a href="#">
+            <a href="#" className='flex items-center gap-4 text-3xl font-Open font-semibold'>
                 <img src={Logo} alt="Navbar logo" className='w-12' />
+                <h1 className='mt-1 lg:hidden text-darkgreen'>Starbucks</h1>
             </a>
             <nav className='md:hidden'>
                 <ul className='flex gap-20 font-Open text-base drop-shadow-md font-bold justify-center items-center'>
