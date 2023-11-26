@@ -1,4 +1,5 @@
-import { FaSpotify, FaYoutube, FaLinkedin, FaInstagram, FaFacebook, FaTwitter  } from "react-icons/fa";
+import { FaSpotify, FaYoutube, FaLinkedin, FaInstagram, FaFacebook  } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -42,14 +43,43 @@ const Footer = () => {
             </div>
         </div>
         <div className="social-media">
-            <ul className="flex my-3.5">
-                <li><a href="#"><FaSpotify className="text-3xl"/></a></li>
-                <li><a href="#"><FaFacebook className="text-3xl"/></a></li>
-                <li><a href="#"><FaLinkedin className="text-3xl"/></a></li>
-                <li><a href="#"><FaInstagram className="text-3xl"/></a></li>
-                <li><a href="#"><FaYoutube className="text-3xl"/></a></li>
-                <li><a href="#"><FaTwitter className="text-3xl"/></a></li>
+            <ul className="flex my-3.5 gap-5">
+                <li className="hover:opacity-80 hover:scale-125 transition duration-300"><a href="#"><FaSpotify className="text-4xl"/></a></li>
+                <li className="hover:opacity-80 hover:scale-125 transition duration-300"><a href="#"><FaFacebook className="text-4xl text-white p-2 rounded-full bg-black "/></a></li>
+                <li className="hover:opacity-80 hover:scale-125 transition duration-300"><a href="#"><FaLinkedin className="text-4xl text-white p-2 rounded-full bg-black"/></a></li>
+                <li className="hover:opacity-80 hover:scale-125 transition duration-300"><a href="#"><FaInstagram className="text-4xl text-white p-2 rounded-full bg-black"/></a></li>
+                <li className="hover:opacity-80 hover:scale-125 transition duration-300"><a href="#"><FaYoutube className="text-4xl text-white p-2 rounded-full bg-black"/></a></li>
+                <li className="hover:opacity-80 hover:scale-125 transition duration-300"><a href="#"><FaXTwitter className="text-4xl text-white p-2 rounded-full bg-black"/></a></li>
             </ul>
+        </div>
+        <div className="politicas">
+            <ul className="flex gap-3 text-sm mt-7 mb-12">
+                <li  className="border-r-2 pr-3">
+                    <a href="#">
+                        Políticas de privacidade 
+                    </a>
+                </li>
+                <li className="border-r-2 pr-3">
+                    <a href="#">
+                        Política de troca de produto
+                    </a>
+                </li>
+                <li className="border-r-2 pr-3">
+                    <a href="#">
+                        Termos de uso
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Política de cookies
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div className="copyright">
+            <p className="text-sm text-gray">
+                © 2023 Starbucks Coffee Company. Todos os direitos reservados.
+            </p>
         </div>
     </div>
   )

@@ -21,9 +21,11 @@ function App() {
     <div>
       <div className='first section bg-background-main bg-center bg-no-repeat bg-cover flex flex-col justify-center items-center pt-10'>
         <Header />
-          <h1 className='text-green text-8xl font-bold font-Manrope flex flex-col drop-shadow-md pt-16'>Good Coffee<span className=' text-white drop-shadow-md'>Good Moods</span></h1>
+        <Fade duration={1000}>
+          <h1 className='text-green md:text-5xl md:mb-7 text-8xl font-bold font-Manrope flex flex-col drop-shadow-md pt-16'>Good Coffee<span className=' text-white drop-shadow-md'>Good Moods</span></h1>
+        </Fade>
           <div className='flex'>
-            <Slide direction='up' delay={550} duration={1500} className='flex items-end'>
+            <Slide triggerOnce direction='up' delay={550} duration={1500} className='flex items-end'>
             <Fade duration={3000}>
               <img src={Grao1} alt="Grãos dafé"/>
             </Fade>
@@ -33,7 +35,7 @@ function App() {
               <img src={Cups} alt="Starbucks cups" />
             </Fade>
             </Slide>
-            <Slide direction='up' delay={500} duration={1500}>
+            <Slide triggerOnce direction='up' delay={500} duration={1500}>
             <Fade duration={3000}>
               <img src={Grao2} alt="Grãos dafé"/>
             </Fade>
