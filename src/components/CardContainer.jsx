@@ -3,7 +3,7 @@ import { LightButton } from "./Button"
 // eslint-disable-next-line react/prop-types
 export const CardContainer = ({title, text, btnText, img}) => {
   return (
-    <div className='w-11/12 m-auto  text-darkgreen bg-background-main bg-center bg-no-repeat bg-cover grid grid-cols-2 items-center justify-center mb-12 md:w-full md:flex md:flex-col '>
+    <div className='w-11/12 m-auto  text-darkgreen bg-blue bg-center bg-no-repeat bg-cover grid grid-cols-2 items-center justify-center mb-12 md:w-full md:flex md:flex-col '>
         <div className='img wrapper w-full'>
             <img className='w-full' src={img} alt="card image" />
         </div>
