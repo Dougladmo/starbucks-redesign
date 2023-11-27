@@ -1,13 +1,52 @@
 import { FaSpotify, FaYoutube, FaLinkedin, FaInstagram, FaFacebook  } from "react-icons/fa";
+import { MdKeyboardArrowDown, MdKeyboardArrowUp, MdKeyboardDoubleArrowUp } from "react-icons/md";
+import { useState } from "react";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
+    const [isActiveAbout, setIsActiveAbout] = useState(false)
+    const [isActiveCareers, setIsActiveCareers] = useState(false)
+    const [isActiveImpact, setIsActiveImpact] = useState(false)
+    const [isActiveRewards, setIsActiveRewards] = useState(false)
+
+    const handleClickAbout = () => {
+        if (isActiveAbout == false) {
+            setIsActiveAbout(true)
+        } else {
+            setIsActiveAbout(false)
+        }
+    }
+
+    const handleClickCareers = () => {
+        if (isActiveCareers == false) {
+            setIsActiveCareers(true)
+        } else {
+            setIsActiveCareers(false)
+        }
+    }
+
+    const handleClickImpact = () => {
+        if (isActiveImpact == false) {
+            setIsActiveImpact(true)
+        } else {
+            setIsActiveImpact(false)
+        }
+    }
+
+    const handleClickRewards = () => {
+        if (isActiveRewards == false) {
+            setIsActiveRewards(true)
+        } else {
+            setIsActiveRewards(false)
+        }
+    }
+
   return (
-    <div className='w-full pl-32 pt-12 pr-10 pb-8 font-Open'>
-        <div className='Footer-top flex border-b-2 border-lightgray mb-12 pb-16'>
-            <div className='flex flex-col'>
-                <h3 className='text-lg font-semibold'>Sobre nós</h3>
-                <ul  className='text-gray-600 mt-5 text-xs flex flex-col gap-7 max-w-xs text-gray '>
+    <div className='w-full pl-32 md:pl-5 pt-12 pr-10 pb-8 font-Open'>
+        <div className='Footer-top flex md:flex md:flex-col md:gap-10 md:items-start md:justify-center border-b-2 border-lightgray mb-12 pb-16'>
+            <div className='flex flex-col select md:w-full md:ml-0'>
+                <h3 className='text-lg font-semibold md:flex md:items-center md:justify-between' onClick={handleClickAbout}>Sobre nós {isActiveAbout ? (<MdKeyboardArrowUp className="lg:hidden text-4xl" />) : (<MdKeyboardArrowDown className="lg:hidden text-4xl" />) } </h3>
+                <ul  className={`text-gray-600 mt-5 text-xs md:text-base flex flex-col gap-7 max-w-xs text-gray ${isActiveAbout ? '' : 'md:hidden'}`}>
                     <li><a href="#">Nossa empresa</a></li>
                     <li><a href="#">Nosso café</a></li>
                     <li><a href="#">Atendimento ao cliente</a></li>
@@ -15,24 +54,24 @@ const Footer = () => {
                     <li><a href="#">Código de Etica e Conduta SouthRock</a></li>
                 </ul>
             </div>
-            <div className='flex flex-col ml-10'>
-                <h3 className='text-lg font-semibold'>Carreira</h3>
-                <ul  className='text-gray-600 mt-5 text-xs flex flex-col gap-7 max-w-xs text-gray '>
+            <div className='flex flex-col select md:w-full ml-10 md:ml-0'>
+                <h3 className='text-lg font-semibold md:flex md:items-center md:justify-between' onClick={handleClickCareers}>Carreira  {isActiveCareers ? (<MdKeyboardArrowUp className="lg:hidden text-4xl" />) : (<MdKeyboardArrowDown className="lg:hidden text-4xl" />) }</h3>
+                <ul  className={`text-gray-600 mt-5 text-xs md:text-base flex flex-col gap-7 max-w-xs text-gray ${isActiveCareers ? '' : 'md:hidden'}`}>
                     <li><a href="#">Central de carreiras</a></li>
                 </ul>
             </div>
-            <div className='flex flex-col  ml-10'>
-                <h3 className='text-lg font-semibold'>Impacto social</h3>
-                <ul  className='text-gray-600 mt-5 text-xs flex flex-col gap-7 max-w-xs text-gray '>
+            <div className='flex flex-col select md:w-full ml-10 md:ml-0'>
+                <h3 className='text-lg font-semibold md:flex md:items-center md:justify-between' onClick={handleClickImpact}>Impacto social {isActiveCareers ? (<MdKeyboardArrowUp className="lg:hidden text-4xl" />) : (<MdKeyboardArrowDown className="lg:hidden text-4xl" />) }</h3>
+                <ul  className={`text-gray-600 mt-5 text-xs md:text-base flex flex-col gap-7 max-w-xs text-gray ${isActiveImpact ? '' : 'md:hidden'}`}>
                     <li><a href="#">Comunidade</a></li>
                     <li><a href="#">Meio Ambiente</a></li>
                     <li><a href="#">Fornecimento ético</a></li>
                     <li><a href="#">Histórias Starbucks</a></li>
                 </ul>
             </div>
-            <div className='flex flex-col ml-10 '>
-                <h3 className='text-lg font-semibold'>Starbucks rewards</h3>
-                <ul className='text-gray-600 mt-5 text-xs flex flex-col gap-7 max-w-xs text-gray '>
+            <div className='flex flex-col select md:w-full ml-10 md:ml-0 '>
+                <h3 className='text-lg font-semibold md:flex md:items-center md:justify-between' onClick={handleClickRewards}>Starbucks rewards  {isActiveRewards ? (<MdKeyboardArrowUp className="lg:hidden text-4xl" />) : (<MdKeyboardArrowDown className="lg:hidden text-4xl" />) }</h3>
+                <ul className={`text-gray-600 mt-5 text-xs md:text-base flex flex-col gap-7 max-w-xs text-gray ${isActiveRewards? '' : 'md:hidden'}`}>
                     <li><a href="#">Baixa o Aplicativo</a></li>
                     <li><a href="#">Termos & Condições do Starbucks Card</a></li>
                     <li><a href="#">Termos & Condições do Starbucks Rewards</a></li>
@@ -53,18 +92,18 @@ const Footer = () => {
             </ul>
         </div>
         <div className="politicas">
-            <ul className="flex gap-3 text-sm mt-7 mb-12">
-                <li  className="border-r-2 pr-3">
+            <ul className="flex gap-3 text-sm mt-7 mb-12 md:flex md:flex-col md:gap-5">
+                <li  className="border-r-2 pr-3 md:border-none hover:opacity-70 transition duration-300">
                     <a href="#">
                         Políticas de privacidade 
                     </a>
                 </li>
-                <li className="border-r-2 pr-3">
+                <li className="border-r-2 pr-3 md:border-none hover:opacity-70 transition duration-300">
                     <a href="#">
                         Política de troca de produto
                     </a>
                 </li>
-                <li className="border-r-2 pr-3">
+                <li className="border-r-2 pr-3 md:border-none hover:opacity-70 transition duration-300">
                     <a href="#">
                         Termos de uso
                     </a>

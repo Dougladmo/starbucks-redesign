@@ -36,6 +36,13 @@ export default {
       '1/2': '50%',
       '3/4': '75%',
      },
+     minWidth: {
+      'xs': '10rem',
+      'sm': '23rem',
+      'lg': '32rem',
+      '1/2': '50%',
+      '3/4': '75%',
+     },
      screens: {
       '2xl': {'max': '1535px'},
       // => @media (max-width: 1535px) { ... }
@@ -43,7 +50,7 @@ export default {
       'xl': {'max': '1279px'},
       // => @media (max-width: 1279px) { ... }
 
-      'lg': '1023px',
+      'lg': '960px',
       // => @media (max-width: 1023px) { ... }
 
       'md': {'max': '950px'},
