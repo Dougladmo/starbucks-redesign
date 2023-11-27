@@ -61,7 +61,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div className='flex flex-col select md:w-full ml-10 md:ml-0'>
-                <h3 className='text-lg font-semibold md:flex md:items-center md:justify-between' onClick={handleClickImpact}>Impacto social {isActiveCareers ? (<MdKeyboardArrowUp className="lg:hidden text-4xl" />) : (<MdKeyboardArrowDown className="lg:hidden text-4xl" />) }</h3>
+                <h3 className='text-lg font-semibold md:flex md:items-center md:justify-between' onClick={handleClickImpact}>Impacto social {isActiveImpact ? (<MdKeyboardArrowUp className="lg:hidden text-4xl" />) : (<MdKeyboardArrowDown className="lg:hidden text-4xl" />) }</h3>
                 <ul  className={`text-gray-600 mt-5 text-xs md:text-base flex flex-col gap-7 max-w-xs text-gray ${isActiveImpact ? '' : 'md:hidden'}`}>
                     <li><a href="#">Comunidade</a></li>
                     <li><a href="#">Meio Ambiente</a></li>
