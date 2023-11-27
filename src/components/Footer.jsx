@@ -1,5 +1,5 @@
 import { FaSpotify, FaYoutube, FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
-import { MdKeyboardArrowDown, MdKeyboardArrowUp, MdKeyboardDoubleArrowUp } from "react-icons/md";
+import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import { useState } from "react";
 import { FaXTwitter } from "react-icons/fa6";
 
