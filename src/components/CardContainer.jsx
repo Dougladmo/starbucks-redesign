@@ -7,9 +7,9 @@ export const CardContainer = ({title, text, btnText, img}) => {
         <div className='img wrapper w-full'>
             <img className='w-full' src={img} alt="card image" />
         </div>
-        <div className='m-auto flex flex-col items-center justify-center gap-12'>
-            <h2 className='text-xl font-medium md:pt-8'>{title}</h2>
-            <p className='text-lg font-normal text-center max-w-lg leading-10 tracking-wide md:max-w-3/4'>{text}</p>
+        <div className='m-auto flex flex-col items-center justify-center gap-5'>
+            <h2 className='text-2xl md:max-w-1/2 md:text-center font-medium md:pt-8'>{title}</h2>
+            <p className='text-lg font-normal md:font-medium text-center max-w-lg leading-10 md:leading-6 md:text-sm md:max-w-3/4 tracking-wide'>{text}</p>
             <LightButton text={btnText}/>
         </div>
     </div>

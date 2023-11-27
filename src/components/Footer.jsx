@@ -45,11 +45,11 @@ const Footer = () => {
         <div className='w-full pl-32 md:pl-5 pt-12 pr-10 pb-8 font-Open'>
             <div className='Footer-top flex md:flex md:flex-col md:gap-10 md:items-start md:justify-center border-b-2 border-lightgray mb-12 pb-16'>
                 <div className='flex flex-col select md:w-full md:ml-0'>
-                    <h3 className='text-xl font-semibold md:flex md:items-center md:justify-between' onClick={handleClickAbout}>Sobre nós
+                    <h3 className='text-xl md:text-lg font-semibold md:flex md:items-center md:justify-between' onClick={handleClickAbout}>Sobre nós
                         {isActiveAbout ?
-                            (<MdKeyboardArrowUp className="lg:hidden text-4xl" />)
+                            (<MdKeyboardArrowUp className="lg:hidden text-3xl" />)
                             :
-                            (<MdKeyboardArrowDown className="lg:hidden text-4xl" />)
+                            (<MdKeyboardArrowDown className="lg:hidden text-3xl" />)
                         }
                     </h3>
                     <ul className={`text-gray-600 mt-5 text-xs md:text-base flex flex-col gap-7 max-w-xs text-gray ${isActiveAbout ? '' : 'md:hidden'}`}>
@@ -61,11 +61,11 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className='flex flex-col select md:w-full ml-10 md:ml-0'>
-                    <h3 className='text-xl font-semibold md:flex md:items-center md:justify-between' onClick={handleClickCareers}>Carreira
+                    <h3 className='text-xl md:text-lg font-semibold md:flex md:items-center md:justify-between' onClick={handleClickCareers}>Carreira
                         {isActiveCareers ?
-                            (<MdKeyboardArrowUp className="lg:hidden text-4xl" />)
+                            (<MdKeyboardArrowUp className="lg:hidden text-3xl" />)
                             :
-                            (<MdKeyboardArrowDown className="lg:hidden text-4xl" />)
+                            (<MdKeyboardArrowDown className="lg:hidden text-3xl" />)
                         }
                     </h3>
                     <ul className={`text-gray-600 mt-5 text-xs md:text-base flex flex-col gap-7 max-w-xs text-gray ${isActiveCareers ? '' : 'md:hidden'}`}>
@@ -73,12 +73,12 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className='flex flex-col select md:w-full ml-10 md:ml-0'>
-                    <h3 className='text-xl font-semibold md:flex md:items-center md:justify-between' onClick={handleClickImpact}>
+                    <h3 className='text-xl md:text-lg font-semibold md:flex md:items-center md:justify-between' onClick={handleClickImpact}>
                         Impacto social
                         {isActiveImpact ?
-                            (<MdKeyboardArrowUp className="lg:hidden text-4xl" />)
+                            (<MdKeyboardArrowUp className="lg:hidden text-3xl" />)
                             :
-                            (<MdKeyboardArrowDown className="lg:hidden text-4xl" />)
+                            (<MdKeyboardArrowDown className="lg:hidden text-3xl" />)
                         }
                     </h3>
                     <ul className={`text-gray-600 mt-5 text-xs md:text-base flex flex-col gap-7 max-w-xs text-gray ${isActiveImpact ? '' : 'md:hidden'}`}>
@@ -89,11 +89,11 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className='flex flex-col select md:w-full ml-10 md:ml-0 '>
-                    <h3 className='text-xl font-semibold md:flex md:items-center md:justify-between' onClick={handleClickRewards}>Starbucks rewards
+                    <h3 className='text-xl md:text-lg font-semibold md:flex md:items-center md:justify-between' onClick={handleClickRewards}>Starbucks rewards
                         {isActiveRewards ?
-                            (<MdKeyboardArrowUp className="lg:hidden text-4xl" />)
+                            (<MdKeyboardArrowUp className="lg:hidden text-3xl" />)
                             :
-                            (<MdKeyboardArrowDown className="lg:hidden text-4xl" />)}
+                            (<MdKeyboardArrowDown className="lg:hidden text-3xl" />)}
                     </h3>
                     <ul className={`text-gray-600 mt-5 text-xs md:text-base flex flex-col gap-7 max-w-xs text-gray ${isActiveRewards ? '' : 'md:hidden'}`}>
                         <li><a href="#">Baixa o Aplicativo</a></li>
@@ -107,12 +107,12 @@ const Footer = () => {
             </div>
             <div className="social-media">
                 <ul className="flex my-3.5 gap-5">
-                    <li className="hover:opacity-80 hover:scale-125 transition duration-300"><a href="#"><FaSpotify className="text-4xl" /></a></li>
-                    <li className="hover:opacity-80 hover:scale-125 transition duration-300"><a href="#"><FaFacebook className="text-4xl text-white p-2 rounded-full bg-black " /></a></li>
-                    <li className="hover:opacity-80 hover:scale-125 transition duration-300"><a href="#"><FaLinkedin className="text-4xl text-white p-2 rounded-full bg-black" /></a></li>
-                    <li className="hover:opacity-80 hover:scale-125 transition duration-300"><a href="#"><FaInstagram className="text-4xl text-white p-2 rounded-full bg-black" /></a></li>
-                    <li className="hover:opacity-80 hover:scale-125 transition duration-300"><a href="#"><FaYoutube className="text-4xl text-white p-2 rounded-full bg-black" /></a></li>
-                    <li className="hover:opacity-80 hover:scale-125 transition duration-300"><a href="#"><FaXTwitter className="text-4xl text-white p-2 rounded-full bg-black" /></a></li>
+                    <li className="hover:opacity-80 hover:scale-125 transition duration-300"><a href="#"><FaSpotify className="text-4xl md:text-3xl" /></a></li>
+                    <li className="hover:opacity-80 hover:scale-125 transition duration-300"><a href="#"><FaFacebook className="text-4xl md:text-3xl text-white p-1 rounded-full bg-black " /></a></li>
+                    <li className="hover:opacity-80 hover:scale-125 transition duration-300"><a href="#"><FaLinkedin className="text-4xl md:text-3xl text-white p-1 rounded-full bg-black" /></a></li>
+                    <li className="hover:opacity-80 hover:scale-125 transition duration-300"><a href="#"><FaInstagram className="text-4xl md:text-3xl text-white p-1 rounded-full bg-black" /></a></li>
+                    <li className="hover:opacity-80 hover:scale-125 transition duration-300"><a href="#"><FaYoutube className="text-4xl md:text-3xl text-white p-1 rounded-full bg-black" /></a></li>
+                    <li className="hover:opacity-80 hover:scale-125 transition duration-300"><a href="#"><FaXTwitter className="text-4xl md:text-3xl text-white p-1 rounded-full bg-black" /></a></li>
                 </ul>
             </div>
             <div className="politicas">
