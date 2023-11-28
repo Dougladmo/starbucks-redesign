@@ -18,7 +18,7 @@ const Header = () => {
                     <li><a href="#" className='hover:text-green  transition duration-500'>Stores</a></li>
                 </ul>
             </nav>
-            <a href="#" className='bg-green text-sm font-Open drop-shadow-md shadow-md tracking-wider transition duration-500 text-white px-10 py-3 rounded-xl border-2 border-green hover:text-green hover:bg-blue md:hidden'>Sign in</a>
+            <a href="#" className='bg-green text-sm font-Open drop-shadow-md shadow-md tracking-wider transition duration-500 text-white px-10 py-3 rounded-xl border-2 border-green hover:text-green hover:bg-transparent md:hidden'>Sign in</a>
         </div>
     </div>
   )

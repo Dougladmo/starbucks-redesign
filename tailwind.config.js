@@ -14,6 +14,7 @@ export default {
       darkgreen: '#1e3932',
       gray: '#0000008F',
       lightgray: '#e5e5e5',
+      transparent: 'transparent',
     },
     fontFamily: {
       Open: ["Open Sans"],

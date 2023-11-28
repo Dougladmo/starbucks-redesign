@@ -132,7 +132,7 @@ const Footer = () => {
                             Termos de uso
                         </a>
                     </li>
-                    <li>
+                    <li className="md:border-none hover:opacity-70 transition duration-300">
                         <a href="#">
                             Política de cookies
                         </a>
