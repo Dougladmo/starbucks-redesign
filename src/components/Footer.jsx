@@ -53,11 +53,11 @@ const Footer = () => {
                         }
                     </h3>
                     <ul className={`text-gray-600 mt-5 text-xs md:text-base flex flex-col gap-7 max-w-xs text-gray ${isActiveAbout ? '' : 'md:hidden'}`}>
-                        <li><a href="#">Nossa empresa</a></li>
-                        <li><a href="#">Nosso café</a></li>
-                        <li><a href="#">Atendimento ao cliente</a></li>
-                        <li><a href="#">Compliance e Privacidade</a></li>
-                        <li><a href="#">Código de Etica e Conduta SouthRock</a></li>
+                        <li><a href="#" className='hover:text-black' >Nossa empresa</a></li>
+                        <li><a href="#" className='hover:text-black' >Nosso café</a></li>
+                        <li><a href="#" className='hover:text-black' >Atendimento ao cliente</a></li>
+                        <li><a href="#" className='hover:text-black' >Compliance e Privacidade</a></li>
+                        <li><a href="#" className='hover:text-black' >Código de Etica e Conduta SouthRock</a></li>
                     </ul>
                 </div>
                 <div className='flex flex-col select md:w-full ml-10 md:ml-0'>
@@ -69,7 +69,7 @@ const Footer = () => {
                         }
                     </h3>
                     <ul className={`text-gray-600 mt-5 text-xs md:text-base flex flex-col gap-7 max-w-xs text-gray ${isActiveCareers ? '' : 'md:hidden'}`}>
-                        <li><a href="#">Central de carreiras</a></li>
+                        <li><a href="#" className='hover:text-black' >Central de carreiras</a></li>
                     </ul>
                 </div>
                 <div className='flex flex-col select md:w-full ml-10 md:ml-0'>
@@ -82,10 +82,10 @@ const Footer = () => {
                         }
                     </h3>
                     <ul className={`text-gray-600 mt-5 text-xs md:text-base flex flex-col gap-7 max-w-xs text-gray ${isActiveImpact ? '' : 'md:hidden'}`}>
-                        <li><a href="#">Comunidade</a></li>
-                        <li><a href="#">Meio Ambiente</a></li>
-                        <li><a href="#">Fornecimento ético</a></li>
-                        <li><a href="#">Histórias Starbucks</a></li>
+                        <li><a href="#" className='hover:text-black' >Comunidade</a></li>
+                        <li><a href="#" className='hover:text-black' >Meio Ambiente</a></li>
+                        <li><a href="#" className='hover:text-black' >Fornecimento ético</a></li>
+                        <li><a href="#" className='hover:text-black' >Histórias Starbucks</a></li>
                     </ul>
                 </div>
                 <div className='flex flex-col select md:w-full ml-10 md:ml-0 '>
@@ -96,12 +96,12 @@ const Footer = () => {
                             (<MdKeyboardArrowDown className="lg:hidden text-3xl" />)}
                     </h3>
                     <ul className={`text-gray-600 mt-5 text-xs md:text-base flex flex-col gap-7 max-w-xs text-gray ${isActiveRewards ? '' : 'md:hidden'}`}>
-                        <li><a href="#">Baixa o Aplicativo</a></li>
-                        <li><a href="#">Termos & Condições do Starbucks Card</a></li>
-                        <li><a href="#">Termos & Condições do Starbucks Rewards</a></li>
-                        <li><a href="#">Termos & Condições do Gift Card</a></li>
-                        <li><a href="#">Termos & Condições de Promoções Starbucks</a></li>
-                        <li><a href="#">Termos & Condições Peça e Pague pelo Celular e Retire na Loja</a></li>
+                        <li><a href="#" className='hover:text-black' >Baixa o Aplicativo</a></li>
+                        <li><a href="#" className='hover:text-black' >Termos & Condições do Starbucks Card</a></li>
+                        <li><a href="#" className='hover:text-black' >Termos & Condições do Starbucks Rewards</a></li>
+                        <li><a href="#" className='hover:text-black' >Termos & Condições do Gift Card</a></li>
+                        <li><a href="#" className='hover:text-black' >Termos & Condições de Promoções Starbucks</a></li>
+                        <li><a href="#" className='hover:text-black' >Termos & Condições Peça e Pague pelo Celular e Retire na Loja</a></li>
                     </ul>
                 </div>
             </div>
