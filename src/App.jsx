@@ -1,5 +1,6 @@
 import {Fade , Slide} from 'react-awesome-reveal'
 
+import background from './assets/background.jpg'
 import Header from './components/Header'
 import Cups from './assets/cups.svg'
 import Grao1 from './assets/graocafe.svg'
@@ -19,7 +20,7 @@ function App() {
   
   return (
     <div>
-      <div className='first section bg-background-main bg-center bg-no-repeat bg-cover flex flex-col justify-center items-center pt-10'>
+      <div style={{backgroundImage: `url(${background})`}} className='first section bg-center bg-no-repeat bg-cover flex flex-col justify-center items-center pt-10'>
         <Header />
         <Fade duration={1000}>
           <h1 className='text-green md:text-5xl md:mb-7 text-8xl font-bold font-Manrope flex flex-col drop-shadow-md pt-16'>Good Coffee<span className=' text-white drop-shadow-md'>Good Moods</span></h1>
